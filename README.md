@@ -1,2 +1,2 @@
 # BTree
-B-Tree implemented in go.
+An in-memory B-Tree, implemented in go.
