@@ -8,7 +8,7 @@ import (
 )
 
 var (
-	logger = log.New(os.Stdout, "DB4Fun >> ", 0)
+	logger = log.New(os.Stdout, "B-TREE >> ", 0)
 )
 
 type BTree struct {

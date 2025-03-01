@@ -10,17 +10,20 @@ import (
 func main() {
 
 	scanner := bufio.NewReader(os.Stdin)
-	fmt.Println("DB4Fun")
-	fmt.Println("1) enter 'exit' to exit terminal")
+	fmt.Println("B-TREE")
+	fmt.Println("1) enter 'exit' to exit terminal.")
 	fmt.Println("2) enter 'test-btree' to test working of b tree with maximum 4 items per node.")
 	for {
 		logger.Print("enter input: ")
 		input, err := scanner.ReadString('\n')
-		input = strings.TrimRight(input, "\r\n")
-		logger.Println("string received : " + input)
+
 		if err != nil {
 			return
 		}
+
+		input = strings.TrimRight(input, "\r\n")
+		logger.Println("input received : " + input)
+
 		if input == "exit" {
 			logger.Println("exiting...")
 			return
